@@ -42,7 +42,8 @@
     <!-- THEME COLOR CHANGE STYLE SHEET -->
     <link rel="stylesheet" class="skin" type="text/css" href="css/skins-type/skin-6.css">
     <!-- SIDE SWITCHER STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="css/switcher.css">  
+    <link rel="stylesheet" type="text/css" href="css/switcher.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
     
 </head>
 
@@ -328,15 +329,15 @@
                                
                                 <div class="twm-nav-list-1">
                                     <ul>
-                                        <li><a href="candidate-dashboard.html"><i class="fa fa-tachometer-alt"></i> Dashboard</a></li>
-                                        <li><a href="candidate-profile.html"><i class="fa fa-user"></i> My Pfofile</a></li>
-                                        <li class="active"><a href="candidate-jobs-applied.html"><i class="fa fa-suitcase"></i> Applied Jobs</a></li>
-                                        <li><a href="candidate-my-resume.html"><i class="fa fa-receipt"></i> My Resume</a></li>
-                                        <li><a href="candidate-saved-jobs.html"><i class="fa fa-file-download"></i> Saved Jobs</a></li>
-                                        <li><a href="candidate-cv-manager.html"><i class="fa fa-paperclip"></i> CV Manager</a></li>
-                                        <li><a href="candidate-job-alert.html"><i class="fa fa-bell"></i> Job Alerts</a></li>
-                                        <li><a href="candidate-change-password.html"><i class="fa fa-fingerprint"></i> Change Passeord</a></li>
-                                        <li><a href="candidate-chat.html"><i class="fa fa-comments"></i>Chat</a></li>
+                                        <li><a href="candidate-dashboard.html"><i class="fa fa-tachometer-alt"></i> Hesabım</a></li>
+                                        <li class="active"><a href="candidate-profile.html"><i class="fa fa-user"></i> Ayarlar</a></li>
+                                        <li><a href="candidate-jobs-applied.html"><i class="fa fa-suitcase"></i> İş elanlarım</a></li>
+                                        <li><a href="candidate-company-applied.html"><i class="fa fa-suitcase"></i> Şirkətlərim</a></li>
+                                        <li><a href="candidate-my-resume.html"><i class="fa fa-receipt"></i> CV İdarəsi</a></li>
+                                        <li><a href="candidate-saved-jobs.html"><i class="fa fa-file-download"></i> Seçilmiş vakansiyalar</a></li>
+                                        <li><a href="candidate-cv-manager.html"><i class="fa fa-paperclip"></i> Müraciət edənlər</a></li>
+                                        <li><a href="candidate-job-alert.html"><i class="fa fa-bell"></i> Yeni elanlar</a></li>
+                                        <li><a href="candidate-chat.html"><i class="fa fa-share-square"></i>Çıxış</a></li>
                                     </ul>
                                 </div>
                                 
@@ -345,233 +346,157 @@
                         </div>
 
                         <div class="col-xl-9 col-lg-8 col-md-12 m-b30">
-                            <div class="twm-right-section-panel candidate-save-job site-bg-gray">
                                 <!--Filter Short By-->
-                                <div class="product-filter-wrap d-flex justify-content-between align-items-center">
-                                    <span class="woocommerce-result-count-left">Applied 250 jobs</span>
-                                
-                                    <form class="woocommerce-ordering twm-filter-select" method="get">
-                                        <span class="woocommerce-result-count">Short By</span>
-                                        <select class="wt-select-bar-2 selectpicker"  data-live-search="true" data-bv-field="size">
-                                            <option>Most Recent</option>
-                                            <option>Freelance</option>
-                                            <option>Full Time</option>
-                                            <option>Internship</option>
-                                            <option>Part Time</option>
-                                            <option>Temporary</option>
-                                        </select>
-                                        <select class="wt-select-bar-2 selectpicker"  data-live-search="true" data-bv-field="size">
-                                            <option>Show 10</option>
-                                            <option>Show 20</option>
-                                            <option>Show 30</option>
-                                            <option>Show 40</option>
-                                            <option>Show 50</option>
-                                            <option>Show 60</option>
-                                        </select>
-                                    </form>
-
+                                <div class="product-filter-wrap d-flex justify-content-between align-items-center m-b30">
+                                    <span class="woocommerce-result-count-left">Showing 2,150 jobs</span>
+                                    <div class="text-left">
+                                        <a href="candidate-create-jobs.html" class="site-button">
+                                            <i class="feather-briefcase"></i>Elan əlavə et
+                                        </a>
+                                    </div>
                                 </div>
-
                                 <div class="twm-jobs-list-wrap">
-                                    <ul>
-                                        <li>
-                                            <div class="twm-jobs-list-style1 mb-5">
-                                                <div class="twm-media">
-                                                    <img src="images/jobs-company/pic1.jpg" alt="#">
-                                                </div>
-                                                <div class="twm-mid-content">
-                                                    <a href="job-detail.html" class="twm-job-title">
-                                                        <h4>Senior Web Designer<span class="twm-job-post-duration">/ 1 days ago</span></h4>
-                                                    </a>
-                                                    <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
-                                                    <a href="https://themeforest.net/user/thewebmax/portfolio" class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                </div>
-                                                <div class="twm-right-content">
-                                                    <div class="twm-jobs-category green"><span class="twm-bg-green">New</span></div>
-                                                    <div class="twm-jobs-amount">$2500 <span>/ Month</span></div>
-                                                    <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Apply Job</a>
+                                    <ul class="job-list">
+                                        <li class="job-item premium-job">
+                                            <div class="job-logo">
+                                                <img src="https://isveren.az/uploads/companies/logo/%22adore-kompani%22-mmc.webp" alt="Company Logo">
+                                            </div>
+                                            <div class="job-details">
+                                                <p class="job-title">Ərazi nümayəndəsi (Yevlax və Goranboy)</p>
+                                                <div class="job-meta">
+                                                    <p class="job-company">“BK Azərbaycan”MMC- Burger King restoranlar şəbəkəsi</p>
+                                                    <div class="job-stats">
+                                                        <span class="views">👁️ 1400</span>
+                                                        <span>|</span>
+                                                        <span class="views">🕒 16 mart</span>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <a data-bs-toggle="modal" href="#saved-jobs-view" role="button" class="custom-toltip">
+                                                                        <span class="fa fa-edit"></span>
+                                                                        <span class="custom-toltip-block"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a data-bs-toggle="modal" href="#jobsDelete" role="button" class="custom-toltip">
+                                                                        <span class="fa fa-trash-alt"></span>
+                                                                        <span class="custom-toltip-block"></span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </li>
-        
-                                        <li>
-                                            <div class="twm-jobs-list-style1 mb-5">
-                                                <div class="twm-media">
-                                                    <img src="images/jobs-company/pic2.jpg" alt="#">
-                                                </div>
-                                                <div class="twm-mid-content">
-                                                    <a href="job-detail.html" class="twm-job-title">
-                                                        <h4>Sr. Rolling Stock Technician<span class="twm-job-post-duration">/ 15 days ago</span></h4>
-                                                    </a>
-                                                    <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
-                                                    <a href="https://themeforest.net/user/thewebmax/portfolio" class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                </div>
-                                                <div class="twm-right-content">
-                                                    <div class="twm-jobs-category green"><span class="twm-bg-brown">Intership</span></div>
-                                                    <div class="twm-jobs-amount">$2500 <span>/ Month</span></div>
-                                                    <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Apply Job</a>
+                                        <li class="job-item new-job">
+                                            <div class="job-logo">
+                                                <img src="https://isveren.az/uploads/companies/logo/azertexnolayn-mmc.png"
+                                                     alt="Company Logo">
+                                            </div>
+                                            <div class="job-details">
+                                                <p class="job-title">Satici</p>
+                                                <div class="job-meta">
+                                                    <p class="job-company">
+                                                        Azerpoct</p>
+                                                    <div class="job-stats">
+                                                        <span class="views">👁️‍🗨️ 280</span>
+                                                        <span>|</span>
+                                                        <span class="views">🕒 Dünən</span>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <a data-bs-toggle="modal" href="#saved-jobs-view" role="button" class="custom-toltip">
+                                                                        <span class="fa fa-edit"></span>
+                                                                        <span class="custom-toltip-block"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a data-bs-toggle="modal" href="#jobsDelete" role="button" class="custom-toltip">
+                                                                        <span class="fa fa-trash-alt"></span>
+                                                                        <span class="custom-toltip-block"></span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </li>
-        
-                                        <li>
-                                            <div class="twm-jobs-list-style1 mb-5">
-                                                <div class="twm-media">
-                                                    <img src="images/jobs-company/pic3.jpg" alt="#">
-                                                </div>
-                                                <div class="twm-mid-content">
-                                                    <a href="job-detail.html" class="twm-job-title">
-                                                        <h4 class="twm-job-title">IT Department Manager<span class="twm-job-post-duration"> / 6 Month ago</span></h4>
-                                                    </a>
-                                                    <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
-                                                    <a href="https://themeforest.net/user/thewebmax/portfolio" class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                </div>
-                                                <div class="twm-right-content">
-                                                    <div class="twm-jobs-category green"><span class="twm-bg-purple">Fulltime</span></div>
-                                                    <div class="twm-jobs-amount">$2500 <span>/ Month</span></div>
-                                                    <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Apply Job</a>
-                                                </div>
+                                        <li class="job-item">
+                                            <div class="job-logo">
+                                                <img src="https://isveren.az/uploads/companies/logo/azertexnolayn-mmc.png"
+                                                     alt="Company Logo">
                                             </div>
-                                        </li>
-        
-                                        <li>
-                                            <div class="twm-jobs-list-style1 mb-5">
-                                                <div class="twm-media">
-                                                    <img src="images/jobs-company/pic4.jpg" alt="#">
-                                                </div>
-                                                <div class="twm-mid-content">
-                                                    <a href="job-detail.html" class="twm-job-title">
-                                                        <h4 class="twm-job-title">Art Production Specialist   <span class="twm-job-post-duration">/ 2 days ago</span></h4>
-                                                    </a>
-                                                    <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
-                                                    <a href="https://themeforest.net/user/thewebmax/portfolio" class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                </div>
-                                                <div class="twm-right-content">
-                                                    <div class="twm-jobs-category green"><span class="twm-bg-sky">Freelancer</span></div>
-                                                    <div class="twm-jobs-amount">$1500 <span>/ Month</span></div>
-                                                    <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Apply Job</a>
-                                                </div>
-                                            </div>
-                                        </li>
-        
-                                        <li>
-                                            <div class="twm-jobs-list-style1 mb-5">
-                                                <div class="twm-media">
-                                                    <img src="images/jobs-company/pic5.jpg" alt="#">
-                                                </div>
-                                                <div class="twm-mid-content">
-                                                    <a href="job-detail.html" class="twm-job-title">
-                                                        <h4 class="twm-job-title">Recreation &amp; Fitness Worker   <span class="twm-job-post-duration">/ 1 days ago</span></h4>
-                                                    </a>
-                                                    <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
-                                                    <a href="https://themeforest.net/user/thewebmax/portfolio" class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                </div>
-                                                <div class="twm-right-content">
-                                                    <div class="twm-jobs-category green"><span class="twm-bg-golden">Temporary</span></div>
-                                                    <div class="twm-jobs-amount">$800 <span>/ Month</span></div>
-                                                    <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Apply Job</a>
+                                            <div class="job-details">
+                                                <p class="job-title">Satici</p>
+                                                <div class="job-meta">
+                                                    <p class="job-company">
+                                                        Azerpoct</p>
+                                                    <div class="job-stats">
+                                                        <span class="views">👁️‍🗨️ 280</span>
+                                                        <span>|</span>
+                                                        <span class="views">🕒 Dünən</span>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <a data-bs-toggle="modal" href="#saved-jobs-view" role="button" class="custom-toltip">
+                                                                        <span class="fa fa-edit"></span>
+                                                                        <span class="custom-toltip-block"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a data-bs-toggle="modal" href="#jobsDelete" role="button" class="custom-toltip">
+                                                                        <span class="fa fa-trash-alt"></span>
+                                                                        <span class="custom-toltip-block"></span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </li>
 
-                                        <li>
-                                            <div class="twm-jobs-list-style1 mb-5">
-                                                <div class="twm-media">
-                                                    <img src="images/jobs-company/pic1.jpg" alt="#">
-                                                </div>
-                                                <div class="twm-mid-content">
-                                                    <a href="job-detail.html" class="twm-job-title">
-                                                        <h4>Senior Web Designer<span class="twm-job-post-duration">/ 1 days ago</span></h4>
-                                                    </a>
-                                                    <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
-                                                    <a href="https://themeforest.net/user/thewebmax/portfolio" class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                </div>
-                                                <div class="twm-right-content">
-                                                    <div class="twm-jobs-category green"><span class="twm-bg-green">New</span></div>
-                                                    <div class="twm-jobs-amount">$1000 <span>/ Month</span></div>
-                                                    <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Apply Job</a>
-                                                </div>
-                                            </div>
-                                        </li>
-        
-                                        <li>
-                                            <div class="twm-jobs-list-style1 mb-5">
-                                                <div class="twm-media">
-                                                    <img src="images/jobs-company/pic2.jpg" alt="#">
-                                                </div>
-                                                <div class="twm-mid-content">
-                                                    <a href="job-detail.html" class="twm-job-title">
-                                                        <h4>Sr. Rolling Stock Technician<span class="twm-job-post-duration">/ 15 days ago</span></h4>
-                                                    </a>
-                                                    <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
-                                                    <a href="https://themeforest.net/user/thewebmax/portfolio" class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                </div>
-                                                <div class="twm-right-content">
-                                                    <div class="twm-jobs-category green"><span class="twm-bg-brown">Intership</span></div>
-                                                    <div class="twm-jobs-amount">$1500 <span>/ Month</span></div>
-                                                    <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Apply Job</a>
-                                                </div>
-                                            </div>
-                                        </li>
-        
-                                        <li>
-                                            <div class="twm-jobs-list-style1 mb-5">
-                                                <div class="twm-media">
-                                                    <img src="images/jobs-company/pic3.jpg" alt="#">
-                                                </div>
-                                                <div class="twm-mid-content">
-                                                    <a href="job-detail.html" class="twm-job-title">
-                                                        <h4 class="twm-job-title">IT Department Manager<span class="twm-job-post-duration"> / 6 Month ago</span></h4>
-                                                    </a>
-                                                    <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
-                                                    <a href="https://themeforest.net/user/thewebmax/portfolio" class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                </div>
-                                                <div class="twm-right-content">
-                                                    <div class="twm-jobs-category green"><span class="twm-bg-purple">Fulltime</span></div>
-                                                    <div class="twm-jobs-amount">$2500 <span>/ Month</span></div>
-                                                    <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Apply Job</a>
-                                                </div>
-                                            </div>
-                                        </li>
-        
-                                        <li>
-                                            <div class="twm-jobs-list-style1 mb-5">
-                                                <div class="twm-media">
-                                                    <img src="images/jobs-company/pic4.jpg" alt="#">
-                                                </div>
-                                                <div class="twm-mid-content">
-                                                    <a href="job-detail.html" class="twm-job-title">
-                                                        <h4 class="twm-job-title">Art Production Specialist   <span class="twm-job-post-duration">/ 2 days ago</span></h4>
-                                                    </a>
-                                                    <p class="twm-job-address">1363-1385 Sunset Blvd Los Angeles, CA 90026, USA</p>
-                                                    <a href="https://themeforest.net/user/thewebmax/portfolio" class="twm-job-websites site-text-primary">https://thewebmax.com</a>
-                                                </div>
-                                                <div class="twm-right-content">
-                                                    <div class="twm-jobs-category green"><span class="twm-bg-sky">Freelancer</span></div>
-                                                    <div class="twm-jobs-amount">$3000 <span>/ Month</span></div>
-                                                    <a href="job-detail.html" class="twm-jobs-browse site-text-primary">Apply Job</a>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        
                                     </ul>
                                 </div>
 
-                                <div class="pagination-outer">
+                                <div class="pagination-outer" style="display: flex; justify-content: center">
                                     <div class="pagination-style1">
                                         <ul class="clearfix">
-                                            <li class="prev"><a href="javascript:;"><span> <i class="fa fa-angle-left"></i> </span></a></li>
+                                            <li class="prev"><a href="javascript:;"><span> <i
+                                                    class="fa fa-angle-left"></i> </span></a></li>
                                             <li><a href="javascript:;">1</a></li>
                                             <li class="active"><a href="javascript:;">2</a></li>
                                             <li><a href="javascript:;">3</a></li>
-                                            <li><a class="javascript:;" href="javascript:;"><i class="fa fa-ellipsis-h"></i></a></li>
+                                            <li><a class="javascript:;" href="javascript:;"><i class="fa fa-ellipsis-h"></i></a>
+                                            </li>
                                             <li><a href="javascript:;">5</a></li>
-                                            <li class="next"><a href="javascript:;"><span> <i class="fa fa-angle-right"></i> </span></a></li>
+                                            <li class="next"><a href="javascript:;"><span> <i
+                                                    class="fa fa-angle-right"></i> </span></a></li>
                                         </ul>
                                     </div>
                                 </div>
+
+                            <div class="modal fade twm-saved-jobs-view" id="jobsDelete" aria-hidden="true" aria-labelledby="sign_up_popupLabel-3" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4 class="modal-title">Do you want to delete your profile?</h4>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                                            <button type="button" class="site-button outline-primary">Yes</button>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
 
                     </div>

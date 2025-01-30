@@ -230,3 +230,8 @@
 .flaticon-bell-1:before {
     content: "\f146";
 }
+.flaticon-like:before {
+    content: "\f147"; /* İstədiyiniz Unicode burada olacaq */
+    font-family: 'Flaticon'; /* Font ailəniz burada olmalıdır */
+}
+
