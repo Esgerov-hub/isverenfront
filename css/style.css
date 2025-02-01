@@ -5861,12 +5861,22 @@ button.scroltop span {
   display: table;
   width: 100%;
   position: relative;
-  margin-top: -65px;
+  margin-top: -85px;
+}
+
+.category-wrapper {
+  margin-top: -125px;
+
 }
 @media (max-width: 767px) {
   .wt-bnr-inr {
     height: 380px;
-    margin-top: -45px;
+    margin-top: -85px;
+  }
+
+  .category-wrapper {
+    margin-top: -125px;
+
   }
 
 }
